@@ -145,21 +145,22 @@ abstract class Repository
     /**
      * Delete a resource by its primary key
      * @param  mixed $id
-     * @return void
+     * @return boolean
      */
     public function delete($id)
     {
         $query = $this->createQueryBuilder();
 
         $query->where($this->getPrimaryKey($query), $id);
-        $query->delete();
+        
+        return $query->delete();
     }
 
     /**
      * Delete resources by a where clause
      * @param  string $column
      * @param  mixed $value
-     * @return void
+     * @return boolean
      */
     public function deleteWhere($column, $value = null)
     {
@@ -169,7 +170,7 @@ abstract class Repository
             $query->where($column);
 
         $query->where($column, $value);
-        $query->delete();
+        return $query->delete();
     }
 
     /**
