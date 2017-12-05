@@ -1,0 +1,25 @@
+{
+    "name": "optimus/genie",
+    "autoload": {
+        "psr-4": {
+            "Optimus\\Genie\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/database": ">=4.0",
+        "optimus/bruno": "~3.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.7",
+        "satooshi/php-coveralls": "dev-master@dev"
+    },
+    "autoload-dev": {
+		"files": [
+			"tests/TestCase.php"
+		]
+	},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT"
+}
