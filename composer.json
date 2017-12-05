@@ -1,13 +1,13 @@
 {
-    "name": "optimus/genie",
+    "name": "Bulwark/repoman",
     "autoload": {
         "psr-4": {
-            "Optimus\\Genie\\": "src/"
+            "Bulwark\\Repoman\\": "src/"
         }
     },
     "require": {
         "illuminate/database": ">=4.0",
-        "optimus/bruno": "~3.0"
+        "bulwark/dream": "~3.0"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
