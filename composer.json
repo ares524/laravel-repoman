@@ -1,5 +1,5 @@
 {
-    "name": "Bulwark/repoman",
+    "name": "bulwark/repoman",
     "autoload": {
         "psr-4": {
             "Bulwark\\Repoman\\": "src/"
