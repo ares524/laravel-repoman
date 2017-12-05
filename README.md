@@ -105,10 +105,6 @@ Delete `User` rows by primary key
 
 Delete `User` rows where `$column=$value`
 
-### deleteWhereArray (array $clauses)
-
-Delete `User` rows by multiple where clauses (`[$column1 => $value1, $column2 => $value2]`)
-
 ## Standards
 
 This package is compliant with [PSR-1], [PSR-2] and [PSR-4]. If you notice compliance oversights,
