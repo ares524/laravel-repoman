@@ -2,9 +2,9 @@
 
 [![Latest Version](https://img.shields.io/badge/release-v1.0.2-blue.svg?style=flat-square)](https://github.com/bulwark1374/repoman/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square)](https://travis-ci.org/esbenp/genie)
-[![Coverage Status](https://img.shields.io/badge/coverage-90%25-green.svg?style=flat-square)](https://coveralls.io/github/esbenp/genie)
-[![Total Downloads](https://img.shields.io/packagist/dt/optimus/genie.svg?style=flat-square)](https://packagist.org/packages/optimus/genie)
+[![Build Status](https://travis-ci.org/bulwark1374/repoman.svg?branch=master)](https://travis-ci.org/bulwark1374/repoman)
+[![Coverage Status](https://img.shields.io/badge/coverage-90%25-green.svg?style=flat-square)](https://coveralls.io/github/bulwark1374/repoman)
+[![Total Downloads](https://img.shields.io/badge/downloads-1-red.svg?style=flat-square)](https://packagist.org/packages/bulwark/repoman)
 
 ## Introduction
 
