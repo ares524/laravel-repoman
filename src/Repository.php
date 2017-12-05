@@ -1,11 +1,11 @@
 <?php
 
-namespace Optimus\Genie;
+namespace Bulwark\Repoman;
 
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Optimus\Bruno\EloquentBuilderTrait;
+use Buwark\Dream\EloquentBuilderTrait;
 
 abstract class Repository
 {
@@ -127,22 +127,6 @@ abstract class Repository
     }
 
     /**
-     * Get resources by multiple where clauses
-     * @param  array  $clauses
-     * @param  array $options
-     * @deprecated
-     * @return Collection
-     */
-    public function getWhereArray(array $clauses, array $options = [])
-    {
-        $query = $this->createBaseBuilder($options);
-
-        $query->where($clauses);
-
-        return $query->get();
-    }
-
-    /**
      * Get resources where a column value exists in array
      * @param  string $column
      * @param  array  $values
@@ -177,24 +161,14 @@ abstract class Repository
      * @param  mixed $value
      * @return void
      */
-    public function deleteWhere($column, $value)
+    public function deleteWhere($column, $value = null)
     {
         $query = $this->createQueryBuilder();
+
+        if(func_get_args() === 1)
+            $query->where($column);
 
         $query->where($column, $value);
-        $query->delete();
-    }
-
-    /**
-     * Delete resources by multiple where clauses
-     * @param  array  $clauses
-     * @return void
-     */
-    public function deleteWhereArray(array $clauses)
-    {
-        $query = $this->createQueryBuilder();
-
-        $query->whereArray($clauses);
         $query->delete();
     }
 
