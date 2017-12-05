@@ -16,13 +16,13 @@ your persistence layer from your business code.
 For Laravel 5.4 and above
 
 ```bash
-composer require bulwark1374/repoman ~2.0
+composer require bulwark/repoman ~2.0
 ```
 
 For Laravel 5.3 and below
 
 ```bash
-composer require bulwark1374/repoman ~1.0
+composer require bulwark/repoman ~1.0
 ```
 
 ## Implementation
