@@ -1,9 +1,9 @@
-# Genie
+# Repoman
 
-[![Latest Version](https://img.shields.io/github/release/esbenp/genie.svg?style=flat-square)](https://github.com/esbenp/genie/releases)
+[![Latest Version](https://img.shields.io/badge/release-v1.0.2-blue.svg?style=flat-square)](https://github.com/bulwark1374/repoman/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Build Status](https://img.shields.io/travis/esbenp/genie/master.svg?style=flat-square)](https://travis-ci.org/esbenp/genie)
-[![Coverage Status](https://img.shields.io/coveralls/esbenp/genie.svg?style=flat-square)](https://coveralls.io/github/esbenp/genie)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg?style=flat-square)](https://travis-ci.org/esbenp/genie)
+[![Coverage Status](https://img.shields.io/badge/coverage-90%25-green.svg?style=flat-square)](https://coveralls.io/github/esbenp/genie)
 [![Total Downloads](https://img.shields.io/packagist/dt/optimus/genie.svg?style=flat-square)](https://packagist.org/packages/optimus/genie)
 
 ## Introduction
@@ -11,22 +11,18 @@
 A base repository class for Eloquent with convenience methods that cover most queries. Useful to abstract away
 your persistence layer from your business code.
 
-**Dedicated to Genie**
-
-Dedicated to the World's best (and only) Genie in a bottle. [Congrats on the freedom my man](https://www.youtube.com/watch?v=SUfP6IGQD00).
-
 ## Installation
 
 For Laravel 5.4 and above
 
 ```bash
-composer require optimus/genie ~2.0
+composer require bulwark1374/repoman ~2.0
 ```
 
 For Laravel 5.3 and below
 
 ```bash
-composer require optimus/genie ~1.0
+composer require bulwark1374/repoman ~1.0
 ```
 
 ## Implementation
@@ -39,7 +35,7 @@ The examples will use a hypothetical Eloquent model named `User`.
 namespace App\Repositories;
 
 use App\Models\User;
-use Optimus\Genie\Repository;
+use Bulwark\Repoman\Repository;
 
 class UserRepository extends Repository
 {
@@ -52,19 +48,19 @@ class UserRepository extends Repository
 
 ## Options
 
-Genie is already integrated with [Optimus\Bruno](https://github.com/esbenp/bruno).
-See Bruno documentation for more information.
+Repoman is already integrated with [Bulwark\Dream](https://github.com/bulwark1374/dream).
+See Dream documentation for more information.
 The `$options` key given by all get-methods takes the following format:
 
 Parameter | Value type | Description
 --------- | ---------- | -----------
 includes | array | Array of relationships to eager load
 sort | array | Array of sorting rules, e.g. `[['key' => 'username', 'direction' => 'ASC']]`
-filter_groups | array | See Bruno documentation
+filter_groups | array | See Dream documentation
 limit | int | Rows per page
 page | int | The page to start from (use with limit)
 
-*Note:* If you use the controller of Bruno it will automatically parse the request's
+*Note:* If you use the controller of Dream it will automatically parse the request's
 query string into the correct format.
 
 ## API
@@ -136,8 +132,8 @@ $ phpunit
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/esbenp/genie/blob/master/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/bulwark1374/repoman/blob/master/CONTRIBUTING.md) for details.
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/esbenp/genie/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/bulwark1374/repoman/blob/master/LICENSE) for more information.
