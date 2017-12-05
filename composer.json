@@ -7,7 +7,7 @@
     },
     "require": {
         "illuminate/database": ">=4.0",
-        "bulwark/dream": "~3.0"
+        "bulwark/dream": "~1.0"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
