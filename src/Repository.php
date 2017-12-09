@@ -5,7 +5,7 @@ namespace Bulwark\Repoman;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Buwark\Dream\EloquentBuilderTrait;
+use Bulwark\Dream\EloquentBuilderTrait;
 
 abstract class Repository
 {
